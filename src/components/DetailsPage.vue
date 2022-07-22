@@ -54,6 +54,14 @@ export default {
   gap: 0.1rem;
 }
 .overview{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
+.image{
+  object-fit: cover;
+  align-content: center;
   width: 100%;
 }
 </style>
