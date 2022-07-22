@@ -1,5 +1,5 @@
 <template> 
-    <div v-if="movie">
+    <div class="details-page" v-if="movie">
 
         <h1 class="name"> {{ movie.original_title }}</h1>
         <h2 class="year"> {{ movie.release_date }}</h2>
@@ -40,5 +40,20 @@ export default {
 
 
 <style>
-
+.detailspage{
+   font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.1rem;
+}
+.overview{
+  width: 100%;
+}
 </style>
