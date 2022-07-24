@@ -12,7 +12,7 @@ export default {
 
 <style>
 #app {
-  background-color: cyan;
+  background-color: #85B6FF;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
