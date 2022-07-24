@@ -101,6 +101,6 @@ export default {
 
 }
 .bottomObserver{
-  margin-bottom: 100px;
+  margin-bottom: 1rem;
 }
 </style>
