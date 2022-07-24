@@ -4,7 +4,7 @@
     <div class="movies_grid">
       <movie-card class="movie-card" @click.native="ShowDescription(movie.id)" :name="movie.original_title" :date="movie.release_date" v-for="movie in movies" :image="movie.poster_path" :key="movie.id"/>    
     </div>
-    <div ref="bottomObserver"></div>
+    <div class="bottomObserver" ref="bottomObserver"></div>
   </div>
 </template>
 
@@ -55,6 +55,7 @@ export default {
 
 <style scoped>
 .MoviesPage{
+    background-color:coral;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,6 +67,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 0.1rem;
+  padding: 0.5rem;
 }
 .Movie {
   border: 1px #cccccc solid;
@@ -91,5 +93,14 @@ export default {
   padding-block: 2rem;
   margin-inline:auto;
   width:100%;
+}
+.web_title{
+  color: black;
+  font-family: Lucida Handwriting;
+  font-size: 4.5rem;
+
+}
+.bottomObserver{
+  margin-bottom: 100px;
 }
 </style>
